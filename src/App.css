@@ -1,0 +1,315 @@
+
+body{
+    background: url("background.jpeg")center center/cover no-repeat fixed;
+    font-family:'ubuntu','cantarell','Fira Sans', 'Droid Sans',sans-serif;
+    
+}
+    *{
+    box-sizing: border-box;
+}
+.container{
+    height: 58px;
+    width: 100%;
+   background-color: #040704;
+   display: flex;
+   justify-content:space-between;
+   
+}
+.container .logo{
+height: 55px;
+width: 100px;
+}
+.container .attribute{
+ 
+    margin-top: 17px;
+    display: flex;
+ gap: 3rem;
+
+}
+.container .attribute a{
+    text-decoration: none;
+    position: relative;
+}
+.container .attribute .home{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .home img{
+    height: 18px;
+}
+.container .attribute .home a{
+    margin-top: 2px;
+}
+.container .attribute .search{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .search img{
+    margin-top: 1px;
+    height: 18px;
+}
+.container .attribute .search a{
+    margin-top: 2px;
+}
+.container .attribute .watchlist{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .watchlist img{
+    margin-top: 2px;
+    height: 18px;
+}
+.container .attribute .watchlist a{
+    margin-top: 2px;
+}
+.container .attribute .originals{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .originals img{
+    margin-top: 2px;
+    height: 18px;
+}
+.container .attribute .originals a{
+    margin-top: 2px;
+}
+.container .attribute .movies{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .movies img{
+    margin-top: 2px;
+    height: 18px;
+}
+.container .attribute .movies a{
+    margin-top: 2px;
+}
+.container .attribute .series{
+    display: flex;
+    gap: 0.04rem;
+}
+.container .attribute .series img{
+    margin-top: 2px;
+    height: 18px;
+}
+.container .attribute .series a{
+    margin-top: 2px;
+}
+.container .attribute  a{
+    color: white;
+    letter-spacing: 0.18em;
+   
+}
+a::before{
+    content: '';
+   top:18px;
+width: 0%;
+height: 0%;
+   border-top: 1px solid white;
+transition: 250ms;
+transition-property: cubic-bezier(0.25,0.46,0.45,0.94);
+opacity: 0;
+position: absolute;
+box-sizing: border-box;
+}
+a:hover::before{
+    width: 100%;
+    height: 1px;
+    opacity: 1;
+}
+.container .login{  
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.flex{
+    margin-top: 60px;
+    display: flex;
+    gap: 5rem;
+    margin-left: 30px;
+}
+.flex img{
+    height: 120px;
+    width: 200px;
+    box-shadow:rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+  rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+}
+.flex img:hover{
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+    cursor: pointer;
+    box-shadow:rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+  rgb(0 0 0 / 73%) 0px 30px 22px -10px;
+  transform: scale(1.03);
+  border-color: rgba(249, 249, 249, 0.8);
+}
+.movie-container{
+margin-left: 30px;
+    margin-top: 40px;
+
+}
+.movie-container .movie1{
+    padding: 20px;
+}
+
+.movie-container .images{
+    display: flex;
+    gap: 2rem;
+}
+
+.movie-container h3{
+    color: white;
+    letter-spacing: 0.08em;
+}
+.movie-container img{
+    height: 150px;
+    width: 250px;
+    box-shadow:rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+  rgb(0 0 0 / 73%) 0px 16px 10px -10px;
+    border-radius: 10px;
+    background: transparent;
+    border: 3px solid rgba(249, 249, 249, 0.1);
+}
+.movie-container img:hover{
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+    cursor: pointer;
+    box-shadow:rgb(0 0 0 / 80%) 0px 40px 58px -16px,
+  rgb(0 0 0 / 73%) 0px 30px 22px -10px;
+  transform: scale(1.03);
+  border-color: rgba(249, 249, 249, 0.8);
+}
+
+.details{
+   
+    min-height: calc(100vh-70px);
+    padding: 0 calc(3.5vw+5px);
+    width: 100%;
+   
+
+}
+.details .preview{
+width: 100%;
+height:745px;
+position: absolute;
+}
+.details .information{
+    top: 170px;
+    left: 20px;
+    position: absolute;
+}
+.details .information .background-hinata{
+    height: 200px;
+}
+.details .information .buttons{
+  
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    gap: 3rem;
+}
+.details .information .buttons .button1{
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+ 
+}
+.details .information .buttons .button2{
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgb(249, 249, 249);
+
+}
+.details .information .buttons .button2:hover{
+    transition: all 250ms cubic-bezier(0.25,0.46,0.45,0.94) 0s;
+    
+    transform: scale(1.01);
+    border-color: rgba(249, 249, 249, 0.8);
+}
+.details .information .buttons .button2 >span{
+    color:rgb(249, 249, 249);
+}
+.details .information .buttons span{
+    display: flex;
+    gap: 0.3rem;
+    margin-left: 10px;
+font-size: 15px;
+letter-spacing: 0.09em;
+}
+.details .information .buttons .btn2{
+    height: 15px;
+  
+}
+.details .information .buttons .btn3{
+   height: 49px;
+   width: 52px;
+   border-radius: 50%;
+border: 2px solid rgb(249, 249, 249);
+   
+
+}
+.details .information .buttons .button3{
+    cursor: pointer;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   background: #040704;
+   border: 0;
+ 
+
+ 
+}
+.details .title{
+    color: rgb(249, 249, 249);
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.details .description{
+    color: rgb(249, 249, 249);
+    margin-left: 20px;
+    line-height: 20px;
+    max-width: 500px;
+
+}
+.Image .loginback{
+    padding: 5px;
+    width: 100%;
+    height: 755px;
+    position: relative;
+    z-index: -1;
+}
+.Image .login-info{
+    position: absolute;
+top: 400px;
+left: 270px;
+}
+.Image .login-info button{
+   background-color: rgb(0, 0, 231); 
+ 
+   border: 0; 
+   color: white;
+    margin-left: 160px;
+    height: 45px;
+    width: 650px
+}
+.Image .login-info h5{
+    margin-left: 180px;
+    color: rgb(249, 249, 249);
+    max-width: 600px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+.Image .login-info span{
+    letter-spacing: 0.09em;
+    font-size: 15px;
+}
+.Image .login-info img{
+    height: 50px;
+    margin-left: 70px;
+}
